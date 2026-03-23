@@ -1,0 +1,53 @@
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App container - no center align */
+.App {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Prevent universal transitions */
+button,
+input,
+textarea,
+select,
+a {
+  transition-property: background-color, color, border-color, opacity, box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* Focus states */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #2D5016;
+}
+
+/* Smooth hover effects */
+button:hover,
+a:hover {
+  transform: translateY(-1px);
+  transition: transform 200ms ease-in-out;
+}
+
+/* Ensure proper focus rings are visible */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
