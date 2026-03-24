@@ -8,9 +8,16 @@ const Footer = () => {
 
   const footerLinks = {
     Product: ['Features', 'Specifications', 'Pricing', 'Demo'],
-    Company: ['About Us', 'Our Team', 'Careers', 'Contact'],
+    Company: ['Home', 'Product', 'About Us', 'Contact'],
     Resources: ['Blog', 'Case Studies', 'FAQs', 'Support'],
     Legal: ['Privacy Policy', 'Terms of Service', 'Refund Policy'],
+  };
+
+  const internalLinks = {
+    'Home': '/',
+    'Product': '/product',
+    'About Us': '/about',
+    'Contact': '/contact' // adjust this if Contact is an anchor link instead
   };
 
   return (
@@ -46,8 +53,8 @@ const Footer = () => {
                 <ul className="space-y-2">
                   {links.map((link) => (
                     <li key={link}>
-                      {link === 'About Us' ? (
-                        <Link to="/about" className="text-gray-400 hover:text-green-400 text-sm transition-colors duration-200">
+                      {internalLinks[link] ? (
+                        <Link to={internalLinks[link]} className="text-gray-400 hover:text-green-400 text-sm transition-colors duration-200">
                           {link}
                         </Link>
                       ) : (
