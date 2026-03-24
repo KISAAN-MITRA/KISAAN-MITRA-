@@ -82,20 +82,21 @@ const Testimonials = () => {
               href="https://youtu.be/eqkyYOF1Iro?si=qM71t5j_hcy_ktaS" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group block bg-white border-2 border-gray-100 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl hover:border-red-500 transition-all duration-300"
+              className="group block bg-white border-2 border-gray-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-red-500 transition-all duration-300"
             >
-              <div className="flex items-start gap-4">
-                <div className="w-14 h-14 bg-red-50 text-red-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-red-600 group-hover:text-white transition-colors duration-300">
-                  <Youtube className="w-8 h-8" />
+              <div className="h-48 sm:h-64 w-full relative">
+                <img src="/Youtube thubnail.avif" alt="YouTube Thumbnail" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/40 transition-colors duration-300">
+                  <Youtube className="w-16 h-16 text-white" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors duration-300">
-                    Watch our YouTube Video
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed text-sm lg:text-base">
-                    Check out our full video demonstrating the advanced capabilities of KISAAN MITRA and how it revolutionizes small farm operations.
-                  </p>
-                </div>
+              </div>
+              <div className="p-6 sm:p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors duration-300">
+                  Watch our YouTube Video
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm lg:text-base">
+                  Check out our full video demonstrating the advanced capabilities of KISAAN MITRA and how it revolutionizes small farm operations.
+                </p>
               </div>
             </a>
 
@@ -104,20 +105,21 @@ const Testimonials = () => {
               href="https://www.facebook.com/share/v/1Kugu2Gu2i/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group block bg-white border-2 border-gray-100 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl hover:border-blue-500 transition-all duration-300"
+              className="group block bg-white border-2 border-gray-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-blue-500 transition-all duration-300"
             >
-              <div className="flex items-start gap-4">
-                <div className="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                  <Facebook className="w-8 h-8" />
+              <div className="h-48 sm:h-64 w-full relative">
+                <img src="/reel thubnail.jpg" alt="Facebook Reel Thumbnail" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/40 transition-colors duration-300">
+                  <Facebook className="w-16 h-16 text-white" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">
-                    Watch our Facebook Reel
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed text-sm lg:text-base">
-                    Watch a quick reel showcasing our EV reaper seamlessly handling crops and navigating real-world Indian farming conditions.
-                  </p>
-                </div>
+              </div>
+              <div className="p-6 sm:p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                  Watch our Facebook Reel
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm lg:text-base">
+                  Watch a quick reel showcasing our EV reaper seamlessly handling crops and navigating real-world Indian farming conditions.
+                </p>
               </div>
             </a>
           </div>

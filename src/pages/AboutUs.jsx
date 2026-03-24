@@ -1,9 +1,7 @@
 import React from 'react';
 import UnitEconomics from '../components/UnitEconomics';
 import ProblemSolution from '../components/ProblemSolution';
-import Impact from '../components/Impact';
 import WhyKisaanMitra from '../components/WhyKisaanMitra';
-import Gen2Vision from '../components/Gen2Vision';
 import Traction from '../components/Traction';
 
 const AboutUs = () => {
@@ -12,9 +10,7 @@ const AboutUs = () => {
       <WhyKisaanMitra />
       <ProblemSolution />
       <UnitEconomics />
-      <Impact />
       <Traction />
-      <Gen2Vision />
     </div>
   );
 };

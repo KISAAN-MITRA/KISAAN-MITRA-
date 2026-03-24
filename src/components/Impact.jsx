@@ -7,14 +7,7 @@ const Impact = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden" id="impact">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0 opacity-10">
-        <img
-          src="https://images.unsplash.com/photo-1560493676-04071c5f467b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwyfHxzdXN0YWluYWJsZSUyMGFncmljdWx0dXJlfGVufDB8fHx8MTc3NDI0NzkxNnww&ixlib=rb-4.1.0&q=85"
-          alt="Sustainable Agriculture"
-          className="w-full h-full object-cover"
-        />
-      </div>
+
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
