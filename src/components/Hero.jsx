@@ -94,7 +94,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-green-500/30 blur-2xl rounded-full"></div>
               <img
-                src="https://customer-assets.emergentagent.com/job_kisaan-mitra-rebuild/artifacts/zg968nxs_ChatGPT%20Image%20Mar%2023%2C%202026%2C%2009_42_08%20AM.png"
+                src="/Product Image.png"
                 alt="Kisaan Mittra EV Reaper"
                 className="relative z-10 w-full h-auto rounded-3xl border-4 border-green-400 shadow-[0_0_50px_rgba(74,222,128,0.3)] transform hover:scale-105 transition-all duration-500"
               />
