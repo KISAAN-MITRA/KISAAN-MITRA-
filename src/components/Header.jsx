@@ -35,8 +35,8 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center cursor-pointer">
             <img
-              src="/Logo.png"
-              alt="Kisan Mitra Logo"
+              src="/Brand Name.png"
+              alt="Kisan Mitra Brand"
               className="h-12 w-auto sm:h-14"
             />
           </Link>

@@ -29,8 +29,8 @@ const Footer = () => {
             {/* Brand Column */}
             <div className="lg:col-span-1">
               <img
-                src="/Logo.png"
-                alt="Kisaan Mittra Logo"
+                src="/Brand Name.png"
+                alt="Kisaan Mittra Brand Logo"
                 className="h-14 w-auto mb-4 bg-white p-2 rounded-xl"
               />
               <p className="text-gray-400 text-sm leading-relaxed mb-4">
