@@ -113,19 +113,6 @@ const UnitEconomics = () => {
                 </div>
               </div>
             </div>
-
-            <div className="text-center mt-8 pt-8 border-t border-gray-700">
-              <p className="text-xl font-semibold mb-4">Want to see the exact numbers for your farm?</p>
-              <button
-                onClick={() => {
-                  const element = document.getElementById('demo-form');
-                  if (element) element.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-200 shadow-lg"
-              >
-                Request Custom ROI Analysis
-              </button>
-            </div>
           </div>
         </div>
       </div>
