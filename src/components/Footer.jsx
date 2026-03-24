@@ -1,5 +1,6 @@
 import React from 'react';
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Linkedin, Mail, Phone, MapPin, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { CONTACT_INFO } from '../data/mock';
 
 const Footer = () => {
@@ -29,17 +30,11 @@ const Footer = () => {
                 Empowering India's small farmers with affordable, sustainable mechanisation solutions.
               </p>
               <div className="flex gap-3">
-                <a href="#" className="w-9 h-9 bg-white/10 hover:bg-green-600 rounded-full flex items-center justify-center transition-colors duration-200">
-                  <Facebook className="w-4 h-4" />
-                </a>
-                <a href="#" className="w-9 h-9 bg-white/10 hover:bg-green-600 rounded-full flex items-center justify-center transition-colors duration-200">
-                  <Twitter className="w-4 h-4" />
-                </a>
-                <a href={CONTACT_INFO.linkedin} target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 hover:bg-green-600 rounded-full flex items-center justify-center transition-colors duration-200">
+                <a href="https://www.linkedin.com/company/hv-electric-vehicle/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 hover:bg-green-600 rounded-full flex items-center justify-center transition-colors duration-200">
                   <Linkedin className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-9 h-9 bg-white/10 hover:bg-green-600 rounded-full flex items-center justify-center transition-colors duration-200">
-                  <Instagram className="w-4 h-4" />
+                <a href="https://youtube.com/@kisaanmittra?si=oUoZCLMjQAHzPHIn" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 hover:bg-green-600 rounded-full flex items-center justify-center transition-colors duration-200">
+                  <Youtube className="w-4 h-4" />
                 </a>
               </div>
             </div>
@@ -51,9 +46,15 @@ const Footer = () => {
                 <ul className="space-y-2">
                   {links.map((link) => (
                     <li key={link}>
-                      <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors duration-200">
-                        {link}
-                      </a>
+                      {link === 'About Us' ? (
+                        <Link to="/about" className="text-gray-400 hover:text-green-400 text-sm transition-colors duration-200">
+                          {link}
+                        </Link>
+                      ) : (
+                        <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors duration-200">
+                          {link}
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>

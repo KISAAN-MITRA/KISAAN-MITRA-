@@ -66,9 +66,6 @@ const ProductSpecs = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-green-600 to-blue-600 text-white border-0 mb-4 text-sm px-5 py-2">
-              Engineering Excellence
-            </Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Built for Performance
             </h2>

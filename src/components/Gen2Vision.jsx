@@ -30,10 +30,6 @@ const Gen2Vision = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <Badge className="bg-gradient-to-r from-green-500 to-blue-500 text-white border-0 mb-4 text-sm px-4 py-1.5">
-              <Sparkles className="w-4 h-4 inline mr-2" />
-              Deeptech Innovation
-            </Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
               Building the Future of Intelligent Farming
             </h2>
