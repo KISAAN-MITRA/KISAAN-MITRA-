@@ -6,7 +6,7 @@ const WhyKisaanMitra = () => {
   const icons = [Users, Settings, Zap, Cpu];
 
   return (
-    <section className="py-20 bg-white" id="why-us">
+    <section className="py-10 bg-white" id="why-us">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           {/* Header */}

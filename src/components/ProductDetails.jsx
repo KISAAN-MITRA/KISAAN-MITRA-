@@ -23,28 +23,40 @@ const ProductDetails = () => {
             <img
               src="https://customer-assets.emergentagent.com/job_kisaan-mitra-rebuild/artifacts/zg968nxs_ChatGPT%20Image%20Mar%2023%2C%202026%2C%2009_42_08%20AM.png"
               alt="Kisaan Mittra EV Reaper"
-              className="relative z-10 w-full max-w-3xl mx-auto h-auto drop-shadow-2xl"
+              className="relative z-10 w-full max-w-3xl mx-auto h-auto drop-shadow-2xl rounded-2xl border-4 border-white"
             />
           </div>
 
           {/* Two Column Layout */}
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Supported Crops */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="bg-green-100 p-3 rounded-lg">
-                  <Wheat className="w-7 h-7 text-green-700" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900">Supported Crops</h3>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                {supportedCrops.map((crop, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center gap-2 text-gray-700 font-medium"
-                  >
-                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
-                    {crop}
+            <div className="bg-[#f8faf8] border border-[#e2e8e2] rounded-3xl p-6 sm:p-8 shadow-lg">
+              <h3 className="text-2xl sm:text-3xl font-bold text-green-800 mb-6">
+                Supported Crops
+              </h3>
+              <div className="grid grid-cols-3 gap-x-4 gap-y-6">
+                {[
+                  { name: 'Wheat', image: '/Crops/Wheat.png' },
+                  { name: 'Paddy', image: '/Crops/Paddy.png' },
+                  { name: 'Maize', image: '/Crops/Corn.png' },
+                  { name: 'Soybean', image: '/Crops/Soyabean.png' },
+                  { name: 'Grams (Chickpea)', image: '/Crops/Gram (Chickpea).png' },
+                  { name: 'Sorghum (Jowar)', image: '/Crops/Sorghum (Jowar).png' },
+                  { name: 'Toor (Pigeon Pea)', image: '/Crops/Toor (Pigeon Pea).png' },
+                  { name: 'Kodo Millets', image: '/Crops/Kodo Milets.png' },
+                  { name: 'Coriander', image: '/Crops/Coriander.jpg' }
+                ].map((crop, index) => (
+                  <div key={index} className="flex flex-col items-center group">
+                    <div className="w-full aspect-[4/3] rounded-xl overflow-hidden mb-3 shadow-sm border border-black/5">
+                      <img 
+                        src={crop.image} 
+                        alt={crop.name} 
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                      />
+                    </div>
+                    <span className="text-sm font-semibold text-gray-800 text-center leading-tight sm:text-base">
+                      {crop.name}
+                    </span>
                   </div>
                 ))}
               </div>

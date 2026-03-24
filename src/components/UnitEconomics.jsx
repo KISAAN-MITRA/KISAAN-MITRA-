@@ -24,7 +24,7 @@ const UnitEconomics = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50" id="economics">
+    <section className="py-10 bg-gradient-to-b from-white to-gray-50" id="economics">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
