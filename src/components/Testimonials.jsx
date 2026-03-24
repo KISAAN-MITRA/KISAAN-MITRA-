@@ -76,7 +76,7 @@ const Testimonials = () => {
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-green-300 transition-all duration-300"
+                className="bg-white !bg-white !bg-opacity-100 z-10 relative border-2 border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-xl hover:border-green-300 transition-all duration-300"
               >
                 {/* Header */}
                 <div className="flex items-start justify-between mb-4">
@@ -106,17 +106,17 @@ const Testimonials = () => {
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-gray-800 font-medium mb-4 leading-relaxed">
                   "{testimonial.text}"
                 </p>
 
                 {/* Farm Details */}
                 <div className="flex gap-2 pt-4 border-t border-gray-200">
-                  <Badge variant="outline" className="text-xs">
+                  <Badge variant="outline" className="text-xs bg-gray-50">
                     <Wheat className="w-3 h-3 mr-1" />
                     {testimonial.acres}
                   </Badge>
-                  <Badge variant="outline" className="text-xs">
+                  <Badge variant="outline" className="text-xs bg-gray-50">
                     {testimonial.crop}
                   </Badge>
                 </div>
