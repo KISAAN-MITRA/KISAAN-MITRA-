@@ -52,6 +52,8 @@ const Hero = () => {
               <span>5–6 hr battery</span>
               <span className="text-gray-400">|</span>
               <span>Multi-crop compatible</span>
+              <span className="text-gray-400">|</span>
+              <span>Autonomous Capabilities</span>
             </div>
 
             {/* CTAs */}
