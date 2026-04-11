@@ -51,10 +51,17 @@ export default async function handler(req, res) {
       </div>
     `;
 
+    const userEmail = body.email;
+
+    if (!userEmail) {
+      return res.status(400).json({ error: 'Email address is required in the form data' });
+    }
+
     const data = await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'akash@kisaanmitra.in',
-      subject: `New ${formTypeLabel} Form Submission`,
+      from: 'HVEV <akash@kisaanmitra.in>',
+      to: userEmail,
+      bcc: 'akash@kisaanmitra.in',
+      subject: `Confirmation: New ${formTypeLabel} Form Submission`,
       html: htmlContent
     });
 

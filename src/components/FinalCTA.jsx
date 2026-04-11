@@ -14,6 +14,7 @@ const FinalCTA = () => {
 
   const [demoForm, setDemoForm] = useState({
     name: '',
+    email: '',
     phone: '',
     location: '',
     landSize: '',
@@ -40,7 +41,7 @@ const FinalCTA = () => {
         title: 'Success!',
         description: 'Your demo request has been submitted!',
       });
-      setDemoForm({ name: '', phone: '', location: '', landSize: '' });
+      setDemoForm({ name: '', email: '', phone: '', location: '', landSize: '' });
     } catch (error) {
       toast({
         title: 'Error',
@@ -191,6 +192,19 @@ const FinalCTA = () => {
                     </div>
                   </div>
                   <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <Label htmlFor="demo-email">Email Address *</Label>
+                      <Input
+                        id="demo-email"
+                        name="email"
+                        type="email"
+                        required
+                        value={demoForm.email}
+                        onChange={(e) => setDemoForm({ ...demoForm, email: e.target.value })}
+                        placeholder="Enter your email"
+                        className="mt-2"
+                      />
+                    </div>
                     <div>
                       <Label htmlFor="demo-location">Location *</Label>
                       <Input
