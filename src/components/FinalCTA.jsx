@@ -30,13 +30,11 @@ const FinalCTA = () => {
   const handleDemoSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    const form = e.target;
-    const formDataObj = new FormData(form);
     try {
-      await fetch("/", {
+      await fetch("/api/send-email", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formDataObj).toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ formType: 'Demo Request', ...demoForm }),
       });
       toast({
         title: 'Success!',
@@ -57,13 +55,11 @@ const FinalCTA = () => {
   const handlePartnerSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    const form = e.target;
-    const formDataObj = new FormData(form);
     try {
-      await fetch("/", {
+      await fetch("/api/send-email", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formDataObj).toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ formType: 'Partnership Inquiry', ...partnerForm }),
       });
       toast({
         title: 'Success!',

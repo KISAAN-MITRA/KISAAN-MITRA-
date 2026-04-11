@@ -24,16 +24,12 @@ const Checkout = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    const form = e.target;
-    // URLSearchParams automatically handles URL encoding of FormData
-    const formDataObj = new FormData(form);
 
     try {
-      await fetch("/", {
+      await fetch("/api/send-email", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formDataObj).toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ formType: 'Checkout', ...formData }),
       });
       toast({
         title: 'Order Request Received!',
