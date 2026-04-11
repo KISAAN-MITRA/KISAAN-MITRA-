@@ -21,7 +21,7 @@ const ProductDetails = () => {
           <div className="mb-16 relative">
             <div className="absolute inset-0 bg-green-400/20 blur-3xl rounded-full transform scale-75"></div>
             <img
-              src="https://customer-assets.emergentagent.com/job_kisaan-mitra-rebuild/artifacts/zg968nxs_ChatGPT%20Image%20Mar%2023%2C%202026%2C%2009_42_08%20AM.png"
+              src="/Seed planter machine with HVEV product listing.png"
               alt="HVEV EV Reaper"
               className="relative z-10 w-full max-w-3xl mx-auto h-auto drop-shadow-2xl rounded-2xl border-4 border-white"
             />

@@ -97,7 +97,7 @@ export const products = {
     price: 220000,
     gstPercent: 12,
     description: "India's first compact EV reaper for small farms",
-    image: "https://customer-assets.emergentagent.com/job_kisaan-mitra-rebuild/artifacts/zg968nxs_ChatGPT%20Image%20Mar%2023%2C%202026%2C%2009_42_08%20AM.png",
+    image: "/Seed planter machine with HVEV product listing.png",
     features: [
       "5-6 hour battery backup",
       "Multi-crop compatible",
