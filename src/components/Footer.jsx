@@ -29,8 +29,8 @@ const Footer = () => {
             {/* Brand Column */}
             <div className="lg:col-span-1">
               <img
-                src="/Brand Name.png"
-                alt="Kisaan Mittra Brand Logo"
+                src="/HVEV_1-removebg-preview.png"
+                alt="HVEV Brand Logo"
                 className="h-14 w-auto mb-4 bg-white p-2 rounded-xl"
               />
               <p className="text-gray-400 text-sm leading-relaxed mb-4">
@@ -103,7 +103,7 @@ const Footer = () => {
           {/* Bottom Section */}
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {currentYear} KISAAN MITRA. All rights reserved.
+              © {currentYear} HVEV. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors duration-200">

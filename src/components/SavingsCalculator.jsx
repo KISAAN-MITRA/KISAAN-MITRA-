@@ -29,7 +29,7 @@ const SavingsCalculator = () => {
               Calculate Your Savings
             </h2>
             <p className="text-lg text-gray-600">
-              See how quickly KISAAN MITRA pays for itself
+              See how quickly HVEV pays for itself
             </p>
           </div>
 

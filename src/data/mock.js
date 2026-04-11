@@ -36,7 +36,7 @@ export const valueMetrics = [
 
 export const unitEconomics = [
   { metric: "Manual Harvest Cost", value: "₹5,000 / acre" },
-  { metric: "Kisaan Mitra Cost", value: "₹1,200 / acre" },
+  { metric: "HVEV Cost", value: "₹1,200 / acre" },
   { metric: "Savings", value: "₹3,800 / acre" },
 ];
 
@@ -47,7 +47,7 @@ export const impactMetrics = [
   { value: "45 Lakh", label: "Acres Parali Burning Reduction" },
 ];
 
-// Updated Why Kisaan Mitra
+// Updated Why HVEV
 export const whyKisaanMitra = [
   {
     title: "Built for 85% small farmers in India",
@@ -92,7 +92,7 @@ export const solutionPoints = [
 export const products = {
   reaper: {
     id: "ev-reaper-base",
-    name: "KISAAN MITRA EV Reaper",
+    name: "HVEV EV Reaper",
     tagline: "Base Platform",
     price: 220000,
     gstPercent: 12,
@@ -201,7 +201,7 @@ export const testimonials = [
     location: "Nanded District, Maharashtra",
     avatar: "RP",
     rating: 5,
-    text: "KISAAN MITRA transformed my farming. I save ₹15,000 every harvest season and complete work 3x faster than manual labor.",
+    text: "HVEV transformed my farming. I save ₹15,000 every harvest season and complete work 3x faster than manual labor.",
     acres: "4-5 acres",
     crop: "Wheat & Soybean",
     videoUrl: "#", // Placeholder
@@ -284,11 +284,11 @@ export const calculateSavings = (landSize, cropsPerYear = 2) => {
 
 // WhatsApp
 export const WHATSAPP_NUMBER = "917400543121";
-export const WHATSAPP_MESSAGE = "Hi, I'm interested in KISAAN MITRA EV Reaper. Please provide more details.";
+export const WHATSAPP_MESSAGE = "Hi, I'm interested in HVEV EV Reaper. Please provide more details.";
 
 // Contact Info
 export const CONTACT_INFO = {
-  email: "queries@kisaanmitra.in",
+  email: "queries@hvev.in",
   phone: "+91 7400543121",
   whatsapp: "917400543121",
   linkedin: "https://www.linkedin.com/company/111980153",

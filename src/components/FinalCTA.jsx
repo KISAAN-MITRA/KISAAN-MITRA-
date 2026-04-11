@@ -125,7 +125,7 @@ const FinalCTA = () => {
                 Detailed inquiries and proposals
               </p>
               <Button
-                onClick={() => window.location.href = 'mailto:info@kisaanmitra.in'}
+                onClick={() => window.location.href = 'mailto:info@hvev.in'}
                 className="w-full bg-white text-gray-900 hover:bg-gray-100 font-semibold py-3 text-lg"
               >
                 Send Email

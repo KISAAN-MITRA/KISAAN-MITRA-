@@ -12,10 +12,10 @@ const WhyKisaanMitra = () => {
           {/* Header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Why Kisaan Mitra
+              Why HVEV
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Strategic advantages that make KISAAN MITRA the right choice for India's agricultural future
+              Strategic advantages that make HVEV the right choice for India's agricultural future
             </p>
           </div>
 

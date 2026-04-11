@@ -1,6 +1,6 @@
-# Kisan Mitra Frontend
+# HVEV Frontend
 
-Welcome to the Kisan Mitra Frontend codebase! This repository contains the React-based user interface for the Kisan Mitra platform, built with modern web technologies to ensure a responsive, accessible, and fast user experience.
+Welcome to the HVEV Frontend codebase! This repository contains the React-based user interface for the HVEV platform, built with modern web technologies to ensure a responsive, accessible, and fast user experience.
 
 ## 🚀 Tech Stack
 
@@ -88,4 +88,4 @@ When contributing to this codebase, please follow these guidelines:
 4. Run tests and ensure the build succeeds before pushing code.
 
 ## 📄 License
-This project is proprietary and intended for the Kisan Mitra platform.
+This project is proprietary and intended for the HVEV platform.

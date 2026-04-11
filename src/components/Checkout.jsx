@@ -279,7 +279,7 @@ const Checkout = () => {
                   </li>
                   <li className="flex gap-2">
                     <span className="font-bold">4.</span>
-                    <span>Receive your KISAAN MITRA at your doorstep</span>
+                    <span>Receive your HVEV at your doorstep</span>
                   </li>
                 </ol>
               </div>

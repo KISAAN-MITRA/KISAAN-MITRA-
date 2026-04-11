@@ -39,7 +39,7 @@ const ProblemSolution = () => {
                   THE SOLUTION
                 </div>
                 <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">
-                  KISAAN MITRA bridges the mechanisation gap
+                  HVEV bridges the mechanisation gap
                 </h3>
               </div>
 

@@ -91,7 +91,7 @@ const UnitEconomics = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl blur-lg opacity-30"></div>
                 <div className="relative bg-gradient-to-br from-green-600 to-emerald-600 rounded-xl p-8">
-                  <h3 className="text-2xl sm:text-3xl font-bold mb-4">The KISAAN MITRA Way</h3>
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-4">The HVEV Way</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <span className="text-green-200 text-xl">✓</span>

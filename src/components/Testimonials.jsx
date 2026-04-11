@@ -18,7 +18,7 @@ const Testimonials = () => {
               Trusted by Farmers Across India
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Hear from farmers in Nanded District, Maharashtra who transformed their harvesting with KISAAN MITRA
+              Hear from farmers in Nanded District, Maharashtra who transformed their harvesting with HVEV
             </p>
           </div>
 
@@ -65,7 +65,7 @@ const Testimonials = () => {
                   Watch our YouTube Video
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-sm lg:text-base">
-                  Check out our full video demonstrating the advanced capabilities of KISAAN MITRA and how it revolutionizes small farm operations.
+                  Check out our full video demonstrating the advanced capabilities of HVEV and how it revolutionizes small farm operations.
                 </p>
               </div>
             </a>

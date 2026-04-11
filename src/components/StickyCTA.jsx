@@ -27,7 +27,7 @@ const StickyCTA = () => {
           {/* Left: Product Info */}
           <div className="hidden md:block">
             <p className="text-white font-semibold text-lg">
-              KISAAN MITRA EV Reaper
+              HVEV EV Reaper
             </p>
             <p className="text-green-200 text-sm">
               India's First Compact EV Reaper • 75% Cost Reduction

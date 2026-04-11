@@ -31,7 +31,7 @@ const Gen2Vision = () => {
               Building the Future of Intelligent Farming
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-6">
-              KISAAN MITRA is evolving from mechanisation to intelligent farm automation
+              HVEV is evolving from mechanisation to intelligent farm automation
             </p>
             <div className="inline-block bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-full font-semibold text-lg">
               From Mechanisation → Intelligent Automation
