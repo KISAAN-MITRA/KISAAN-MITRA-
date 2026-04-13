@@ -95,9 +95,12 @@ const Hero = () => {
           <div className="hidden lg:block">
             <div className="relative">
               <div className="absolute -inset-4 bg-green-500/30 blur-2xl rounded-full"></div>
-              <img
-                src="/HVEV seed planter in action.png"
-                alt="HVEV EV Reaper"
+              <video
+                src="/Machine_Ad_Video_Generation.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="relative z-10 w-full h-auto rounded-3xl border-4 border-green-400 shadow-[0_0_50px_rgba(74,222,128,0.3)] transform hover:scale-105 transition-all duration-500"
               />
             </div>

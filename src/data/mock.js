@@ -288,7 +288,7 @@ export const WHATSAPP_MESSAGE = "Hi, I'm interested in HVEV EV Reaper. Please pr
 
 // Contact Info
 export const CONTACT_INFO = {
-  email: "queries@hvev.in",
+  email: "queries@kisaanmitra.in",
   phone: "+91 7400543121",
   whatsapp: "917400543121",
   linkedin: "https://www.linkedin.com/company/111980153",
