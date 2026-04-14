@@ -54,7 +54,7 @@ const ModularPlatform = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-green-400/20 blur-3xl rounded-full transform scale-75"></div>
               <img
-                src="/Seed planter machine with HVEV product listing.png"
+                src="/Seed planter machine with HVEV product listing.webp"
                 alt="HVEV Base Platform"
                 className="relative z-10 w-full h-auto drop-shadow-2xl"
               />

@@ -97,7 +97,7 @@ export const products = {
     price: 220000,
     gstPercent: 12,
     description: "India's first compact EV reaper for small farms",
-    image: "/Seed planter machine with HVEV product listing.png",
+    image: "/Seed planter machine with HVEV product listing.webp",
     features: [
       "5-6 hour battery backup",
       "Multi-crop compatible",

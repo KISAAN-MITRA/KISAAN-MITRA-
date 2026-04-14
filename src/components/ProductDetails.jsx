@@ -21,7 +21,7 @@ const ProductDetails = () => {
           <div className="mb-16 relative">
             <div className="absolute inset-0 bg-green-400/20 blur-3xl rounded-full transform scale-75"></div>
             <img
-              src="/Seed planter machine with HVEV product listing.png"
+              src="/Seed planter machine with HVEV product listing.webp"
               alt="HVEV EV Reaper"
               className="relative z-10 w-full max-w-3xl mx-auto h-auto drop-shadow-2xl rounded-2xl border-4 border-white"
             />
@@ -36,15 +36,15 @@ const ProductDetails = () => {
               </h3>
               <div className="grid grid-cols-3 gap-x-4 gap-y-6">
                 {[
-                  { name: 'Wheat', image: '/Crops/Wheat.png' },
-                  { name: 'Paddy', image: '/Crops/Paddy.png' },
-                  { name: 'Maize', image: '/Crops/Corn.png' },
-                  { name: 'Soybean', image: '/Crops/Soyabean.png' },
-                  { name: 'Grams (Chickpea)', image: '/Crops/Gram (Chickpea).png' },
-                  { name: 'Sorghum (Jowar)', image: '/Crops/Sorghum (Jowar).png' },
-                  { name: 'Toor (Pigeon Pea)', image: '/Crops/Toor (Pigeon Pea).png' },
-                  { name: 'Kodo Millets', image: '/Crops/Kodo Milets.png' },
-                  { name: 'Coriander', image: '/Crops/Coriander.jpg' }
+                  { name: 'Wheat', image: '/Crops/Wheat.webp' },
+                  { name: 'Paddy', image: '/Crops/Paddy.webp' },
+                  { name: 'Maize', image: '/Crops/Corn.webp' },
+                  { name: 'Soybean', image: '/Crops/Soyabean.webp' },
+                  { name: 'Grams (Chickpea)', image: '/Crops/Gram (Chickpea).webp' },
+                  { name: 'Sorghum (Jowar)', image: '/Crops/Sorghum (Jowar).webp' },
+                  { name: 'Toor (Pigeon Pea)', image: '/Crops/Toor (Pigeon Pea).webp' },
+                  { name: 'Kodo Millets', image: '/Crops/Kodo Milets.webp' },
+                  { name: 'Coriander', image: '/Crops/Coriander.webp' }
                 ].map((crop, index) => (
                   <div key={index} className="flex flex-col items-center group">
                     <div className="w-full aspect-[4/3] rounded-xl overflow-hidden mb-3 shadow-sm border border-black/5">
