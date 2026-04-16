@@ -40,6 +40,20 @@ We will try to reach you shortly.`;
       return res.status(400).json({ error: 'Email address is required in the form data' });
     }
 
+    const googleScriptUrl = process.env.GOOGLE_SCRIPT_WEB_APP_URL;
+    if (googleScriptUrl) {
+      try {
+        await fetch(googleScriptUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body)
+        });
+      } catch (scriptError) {
+        console.error('Failed to send data to Google Apps Script:', scriptError);
+        // Continue even if sheet saving fails, to ensure email is still sent
+      }
+    }
+
     const data = await resend.emails.send({
       from: 'HVEV <akash@kisaanmitra.in>',
       to: userEmail,
