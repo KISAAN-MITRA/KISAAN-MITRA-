@@ -9,9 +9,9 @@ export default async function handler(req, res) {
 
   try {
     const body = req.body;
-    let detailsHtml = '';
+    let detailsText = '';
     
-    // Construct HTML out of the body dynamically
+    // Construct text out of the body dynamically
     for (const [key, value] of Object.entries(body)) {
       if (key !== 'formType' && value) {
         // Format the key (e.g., camelCase to Camel Case)
@@ -19,7 +19,7 @@ export default async function handler(req, res) {
           .replace(/([A-Z])/g, ' $1')
           .replace(/^./, (str) => str.toUpperCase());
           
-        detailsHtml += `<p style="margin: 5px 0;"><strong>${formattedKey}:</strong> ${value}</p>`;
+        detailsText += `${formattedKey}: ${value}\n`;
       }
     }
 
@@ -27,29 +27,12 @@ export default async function handler(req, res) {
       ? body.formType.charAt(0).toUpperCase() + body.formType.slice(1) 
       : 'Contact';
 
-    const htmlContent = `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
-        <h2 style="color: #15803d; text-align: center; border-bottom: 2px solid #15803d; padding-bottom: 10px;">
-          New Form Submission: ${formTypeLabel}
-        </h2>
-        
-        <div style="background-color: #f9fafb; padding: 20px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #e5e7eb;">
-          <h3 style="margin-top: 0; color: #111827;">Submission Details</h3>
-          ${detailsHtml}
-        </div>
+    const textContent = `Greetings by HVEV,
 
-        <div style="background-color: #f0fdf4; padding: 20px; border-radius: 8px; border-left: 4px solid #15803d;">
-          <h3 style="margin-top: 0; color: #15803d;">About HVEV</h3>
-          <p style="line-height: 1.5; margin-bottom: 0;">
-            HVEV (formerly Kisaan Mitra) is revolutionizing the agricultural landscape by blending traditional farming methods with cutting-edge technology. We empower farmers with next-generation smart tools and modular farming platforms, maximizing yields and ensuring sustainable growth. Our commitment is to deliver affordable, high-efficiency equipment tailored for modern farming needs.
-          </p>
-        </div>
-        
-        <p style="text-align: center; color: #6b7280; font-size: 12px; margin-top: 30px;">
-          This is an automated email sent from the HVEV website.
-        </p>
-      </div>
-    `;
+Thanks for reaching regarding the ${formTypeLabel} form submission. Please confirm the details filled by you:
+
+${detailsText}
+We will try to reach you shortly.`;
 
     const userEmail = body.email;
 
@@ -62,7 +45,7 @@ export default async function handler(req, res) {
       to: userEmail,
       bcc: 'akash@kisaanmitra.in',
       subject: `Confirmation: New ${formTypeLabel} Form Submission`,
-      html: htmlContent
+      text: textContent
     });
 
     return res.status(200).json({ success: true, data });
