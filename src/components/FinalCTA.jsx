@@ -18,6 +18,7 @@ const FinalCTA = () => {
     phone: '',
     location: '',
     landSize: '',
+    botField: '',
   });
 
   const [partnerForm, setPartnerForm] = useState({
@@ -26,10 +27,18 @@ const FinalCTA = () => {
     phone: '',
     partnerType: '',
     message: '',
+    botField: '',
   });
 
   const handleDemoSubmit = async (e) => {
     e.preventDefault();
+    if (demoForm.botField) {
+      toast({
+        title: 'Success!',
+        description: 'Your demo request has been submitted!',
+      });
+      return;
+    }
     setIsSubmitting(true);
     try {
       await fetch("/api/send-email", {
@@ -41,7 +50,7 @@ const FinalCTA = () => {
         title: 'Success!',
         description: 'Your demo request has been submitted!',
       });
-      setDemoForm({ name: '', email: '', phone: '', location: '', landSize: '' });
+      setDemoForm({ name: '', email: '', phone: '', location: '', landSize: '', botField: '' });
     } catch (error) {
       toast({
         title: 'Error',
@@ -55,6 +64,13 @@ const FinalCTA = () => {
 
   const handlePartnerSubmit = async (e) => {
     e.preventDefault();
+    if (partnerForm.botField) {
+      toast({
+        title: 'Success!',
+        description: 'Your partnership inquiry has been submitted!',
+      });
+      return;
+    }
     setIsSubmitting(true);
     try {
       await fetch("/api/send-email", {
@@ -66,7 +82,7 @@ const FinalCTA = () => {
         title: 'Success!',
         description: 'Your partnership inquiry has been submitted!',
       });
-      setPartnerForm({ name: '', email: '', phone: '', partnerType: '', message: '' });
+      setPartnerForm({ name: '', email: '', phone: '', partnerType: '', message: '', botField: '' });
     } catch (error) {
       toast({
         title: 'Error',
@@ -161,8 +177,13 @@ const FinalCTA = () => {
             {/* Form Content */}
             <div className="p-8" id="demo-form">
               {activeForm === 'demo' ? (
-                <form name="demo" method="POST" data-netlify="true" onSubmit={handleDemoSubmit} className="space-y-6">
+                <form name="demo" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleDemoSubmit} className="space-y-6">
                   <input type="hidden" name="form-name" value="demo" />
+                  <p className="hidden">
+                    <label>
+                      Don't fill this out if you're human: <input name="bot-field" value={demoForm.botField} onChange={(e) => setDemoForm({ ...demoForm, botField: e.target.value })} />
+                    </label>
+                  </p>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <Label htmlFor="demo-name">Full Name *</Label>
@@ -240,8 +261,13 @@ const FinalCTA = () => {
                   </Button>
                 </form>
               ) : (
-                <form name="partner" method="POST" data-netlify="true" onSubmit={handlePartnerSubmit} className="space-y-6">
+                <form name="partner" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handlePartnerSubmit} className="space-y-6">
                   <input type="hidden" name="form-name" value="partner" />
+                  <p className="hidden">
+                    <label>
+                      Don't fill this out if you're human: <input name="bot-field" value={partnerForm.botField} onChange={(e) => setPartnerForm({ ...partnerForm, botField: e.target.value })} />
+                    </label>
+                  </p>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <Label htmlFor="partner-name">Full Name *</Label>

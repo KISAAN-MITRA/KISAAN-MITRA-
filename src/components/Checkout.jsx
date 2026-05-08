@@ -19,10 +19,18 @@ const Checkout = () => {
     pincode: '',
     gstNumber: '',
     notes: '',
+    botField: '',
   });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (formData.botField) {
+      toast({
+        title: 'Order Request Received!',
+        description: `Our team will contact you within 24 hours.`,
+      });
+      return;
+    }
     setIsSubmitting(true);
 
     try {
@@ -45,6 +53,7 @@ const Checkout = () => {
         pincode: '',
         gstNumber: '',
         notes: '',
+        botField: '',
       });
     } catch (error) {
       toast({
@@ -75,8 +84,13 @@ const Checkout = () => {
             {/* Form */}
             <div className="lg:col-span-2">
               <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
-                <form name="order" method="POST" data-netlify="true" onSubmit={handleSubmit} className="space-y-6">
+                <form name="order" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit} className="space-y-6">
                   <input type="hidden" name="form-name" value="order" />
+                  <p className="hidden">
+                    <label>
+                      Don't fill this out if you're human: <input name="bot-field" value={formData.botField} onChange={(e) => setFormData({ ...formData, botField: e.target.value })} />
+                    </label>
+                  </p>
                   {/* Personal Details */}
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Personal Details</h3>

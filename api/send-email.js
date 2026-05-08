@@ -9,6 +9,11 @@ export default async function handler(req, res) {
 
   try {
     const body = req.body;
+    
+    // Honeypot check
+    if (body.botField) {
+      return res.status(200).json({ success: true, message: 'Form submitted successfully' });
+    }
     let detailsText = '';
     
     // Construct text out of the body dynamically
